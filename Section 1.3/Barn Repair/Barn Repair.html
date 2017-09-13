@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.83">
+  <style type="text/css">
+    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    table.t1 {border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080}
+    td.td1 {width: 63.8px; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td2 {width: 304.1px; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 1.0px 1.0px 1.0px 1.0px}
+  </style>
+</head>
+<body>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; text-align: center; line-height: 28.0px; font: 24.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Barn Repair</b></span></h1>
+<p class="p2"><span class="s1">It was a dark and stormy night that ripped the roof and gates off the stalls that hold Farmer John's cows. Happily, many of the cows were on vacation, so the barn was not completely full.</span></p>
+<p class="p2"><span class="s1">The cows spend the night in stalls that are arranged adjacent to each other in a long line. Some stalls have cows in them; some do not. All stalls are the same width.</span></p>
+<p class="p2"><span class="s1">Farmer John must quickly erect new boards in front of the stalls, since the doors were lost. His new lumber supplier will supply him boards of any length he wishes, but the supplier can only deliver a small number of total boards. Farmer John wishes to minimize the total length of the boards he must purchase.</span></p>
+<p class="p2"><span class="s1">Given M (1 &lt;= M &lt;= 50), the maximum number of boards that can be purchased; S (1 &lt;= S &lt;= 200), the total number of stalls; C (1 &lt;= C &lt;= S) the number of cows in the stalls, and the C occupied stall numbers (1 &lt;= stall_number &lt;= S), calculate the minimum number of stalls that must be blocked in order to block all the stalls that have cows in them.</span></p>
+<p class="p2"><span class="s1">Print your answer as the total number of stalls blocked.</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>PROGRAM NAME: barn1</b></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>INPUT FORMAT</b></span></h3>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1">Line 1:</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p4"><span class="s1">M, S, and C (space separated)</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1">Lines 2-C+1:</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p4"><span class="s1">Each line contains one integer, the number of an occupied stall.</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>SAMPLE INPUT (file barn1.in)</b></span></h3>
+<p class="p5"><span class="s1">4 50 18</span></p>
+<p class="p5"><span class="s1">3</span></p>
+<p class="p5"><span class="s1">4</span></p>
+<p class="p5"><span class="s1">6</span></p>
+<p class="p5"><span class="s1">8</span></p>
+<p class="p5"><span class="s1">14</span></p>
+<p class="p5"><span class="s1">15</span></p>
+<p class="p5"><span class="s1">16</span></p>
+<p class="p5"><span class="s1">17</span></p>
+<p class="p5"><span class="s1">21</span></p>
+<p class="p5"><span class="s1">25</span></p>
+<p class="p5"><span class="s1">26</span></p>
+<p class="p5"><span class="s1">27</span></p>
+<p class="p5"><span class="s1">30</span></p>
+<p class="p5"><span class="s1">31</span></p>
+<p class="p5"><span class="s1">40</span></p>
+<p class="p5"><span class="s1">41</span></p>
+<p class="p5"><span class="s1">42</span></p>
+<p class="p5"><span class="s1">43</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>OUTPUT FORMAT</b></span></h3>
+<p class="p4"><span class="s1">A single line with one integer that represents the total number of stalls blocked.</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>SAMPLE OUTPUT (file barn1.out)</b></span></h3>
+<p class="p5"><span class="s1">25</span></p>
+<p class="p4"><span class="s1">[One minimum arrangement is one board covering stalls 3-8, one covering 14-21, one covering 25-31, and one covering 40-43.] </span></p>
+</body>
+</html>

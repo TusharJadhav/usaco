@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.83">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 43.0px; font: 37.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #000000; -webkit-text-stroke: #000000}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 12.0px Times; text-decoration: underline ; font-kerning: none; color: #0000ee; -webkit-text-stroke: 0px #0000ee}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"><b>Name That Number</b></span></p>
+<p class="p2"><span class="s1">Among the large Wisconsin cattle ranchers, it is customary to brand cows with serial numbers to please the Accounting Department. The cow hands don't appreciate the advantage of this filing system, though, and wish to call the members of their herd by a pleasing name rather than saying, "C'mon, #4734, get along."</span></p>
+<p class="p2"><span class="s1">Help the poor cowhands out by writing a program that will translate the brand serial number of a cow into possible names uniquely associated with that serial number. Since the cow hands all have cellular saddle phones these days, use the standard Touch-Tone(R) telephone keypad mapping to get from numbers to letters (except for "Q" and "Z"):</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">          </span>2: A,B,C <span class="Apple-converted-space">    </span>5: J,K,L<span class="Apple-converted-space">    </span>8: T,U,V</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">          </span>3: D,E,F <span class="Apple-converted-space">    </span>6: M,N,O<span class="Apple-converted-space">    </span>9: W,X,Y</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">          </span>4: G,H,I <span class="Apple-converted-space">    </span>7: P,R,S</span></p>
+<p class="p2"><span class="s1">Acceptable names for cattle are provided to you in a file named "dict.txt", which contains a list of fewer than 5,000 acceptable cattle names (all letters capitalized). Take a cow's brand number and report which of all the possible words to which that number maps are in the <a href="http://train.usaco.org/usaco/namenumdict.txt"><span class="s2">given dictionary</span></a> which is supplied as dict.txt in the grading environment (and is sorted into ascending order).</span></p>
+<p class="p2"><span class="s1">For instance, the brand number 4734 produces all the following names:</span></p>
+<p class="p3"><span class="s1">GPDG GPDH GPDI GPEG GPEH GPEI GPFG GPFH GPFI GRDG GRDH GRDI</span></p>
+<p class="p3"><span class="s1">GREG GREH GREI GRFG GRFH GRFI GSDG GSDH GSDI GSEG GSEH GSEI</span></p>
+<p class="p3"><span class="s1">GSFG GSFH GSFI HPDG HPDH HPDI HPEG HPEH HPEI HPFG HPFH HPFI</span></p>
+<p class="p3"><span class="s1">HRDG HRDH HRDI HREG HREH HREI HRFG HRFH HRFI HSDG HSDH HSDI</span></p>
+<p class="p3"><span class="s1">HSEG HSEH HSEI HSFG HSFH HSFI IPDG IPDH IPDI IPEG IPEH IPEI</span></p>
+<p class="p3"><span class="s1">IPFG IPFH IPFI IRDG IRDH IRDI IREG IREH IREI IRFG IRFH IRFI</span></p>
+<p class="p3"><span class="s1">ISDG ISDH ISDI ISEG ISEH ISEI ISFG ISFH ISFI</span></p>
+<p class="p2"><span class="s1">As it happens, the only one of these 81 names that is in the list of valid names is "GREG".</span></p>
+<p class="p2"><span class="s1">Write a program that is given the brand number of a cow and prints all the valid names that can be generated from that brand number or ``NONE'' if there are no valid names. Serial numbers can be as many as a dozen digits long.</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>PROGRAM NAME: namenum</b></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>INPUT FORMAT</b></span></h3>
+<p class="p5"><span class="s1">A single line with a number from 1 through 12 digits in length.</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>SAMPLE INPUT (file namenum.in)</b></span></h3>
+<p class="p3"><span class="s1">4734</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>OUTPUT FORMAT</b></span></h3>
+<p class="p5"><span class="s1">A list of valid names that can be generated from the input, one per line, in ascending alphabetical order.</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>SAMPLE OUTPUT (file namenum.out)</b></span></h3>
+<p class="p3"><span class="s1">GREG</span></p>
+</body>
+</html>

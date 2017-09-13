@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.83">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 43.0px; font: 37.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #000000; -webkit-text-stroke: #000000}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {-webkit-text-stroke: 0px #000000}
+    table.t1 {border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080}
+    td.td1 {width: 66.4px; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td2 {width: 529.7px; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 1.0px 1.0px 1.0px 1.0px}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"><b>Milking Cows</b></span></p>
+<p class="p2"><span class="s1">Three farmers rise at 5 am each morning and head for the barn to milk three cows. The first farmer begins milking his cow at time 300 (measured in seconds after 5 am) and ends at time 1000. The second farmer begins at time 700 and ends at time 1200. The third farmer begins at time 1500 and ends at time 2100. The longest continuous time during which at least one farmer was milking a cow was 900 seconds (from 300 to 1200). The longest time no milking was done, between the beginning and the ending of all milking, was 300 seconds (1500 minus 1200).</span></p>
+<p class="p2"><span class="s1">Your job is to write a program that will examine a list of beginning and ending times for N (1 &lt;= N &lt;= 5000) farmers milking N cows and compute (in seconds):</span></p>
+<ul class="ul1">
+  <li class="li3"><span class="s2"></span><span class="s1">The longest time interval at least one cow was milked.</span></li>
+  <li class="li3"><span class="s2"></span><span class="s1">The longest time interval (after milking starts) during which no cows were being milked.</span></li>
+</ul>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>PROGRAM NAME: milk2</b></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>INPUT FORMAT</b></span></h3>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p3"><span class="s1">Line 1:</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s1">The single integer, N</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p3"><span class="s1">Lines 2..N+1:</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s1">Two non-negative integers less than 1,000,000, respectively the starting and ending time in seconds after 0500</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>SAMPLE INPUT (file milk2.in)</b></span></h3>
+<p class="p5"><span class="s1">3</span></p>
+<p class="p5"><span class="s1">300 1000</span></p>
+<p class="p5"><span class="s1">700 1200</span></p>
+<p class="p5"><span class="s1">1500 2100</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>OUTPUT FORMAT</b></span></h3>
+<p class="p3"><span class="s1">A single line with two integers that represent the longest continuous time of milking and the longest idle time.</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>SAMPLE OUTPUT (file milk2.out)</b></span></h3>
+<p class="p5"><span class="s1">900 300</span></p>
+</body>
+</html>

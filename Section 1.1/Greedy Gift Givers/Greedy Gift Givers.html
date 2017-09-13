@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.81">
+  <style type="text/css">
+    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p5 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #000000; -webkit-text-stroke: #000000}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 10.0px Times; font-kerning: none}
+    td.td1 {width: 54.8px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td2 {width: 719.2px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td3 {width: 713.2px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td4 {width: 120.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td5 {width: 71.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td6 {width: 105.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td7 {width: 80.5px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td8 {width: 58.2px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td9 {width: 452.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+  </style>
+</head>
+<body>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; text-align: center; line-height: 28.0px; font: 24.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Greedy Gift Givers</b></span></h1>
+<p class="p2"><span class="s1">A group of NP (2 ≤ NP ≤ 10) uniquely named friends has decided to exchange gifts of money. Each of these friends might or might not give some money to any or all of the other friends. Likewise, each friend might or might not receive money from any or all of the other friends. Your goal in this problem is to deduce how much more money each person gives than they receive.</span></p>
+<p class="p2"><span class="s1">The rules for gift-giving are potentially different than you might expect. Each person sets aside a certain amount of money to give and divides this money evenly among all those to whom he or she is giving a gift. No fractional money is available, so dividing 3 among 2 friends would be 1 each for the friends with 1 left over -- that 1 left over stays in the giver's "account".</span></p>
+<p class="p2"><span class="s1">In any group of friends, some people are more giving than others (or at least may have more acquaintances) and some people have more money than others.</span></p>
+<p class="p2"><span class="s1">Given a group of friends, no one of whom has a name longer than 14 characters, the money each person in the group spends on gifts, and a (sub)list of friends to whom each person gives gifts, determine how much more (or less) each person in the group gives than they receive.</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>IMPORTANT NOTE</b></span></h3>
+<p class="p2"><span class="s1">The grader machine is a Linux machine that uses standard Unix conventions: end of line is a single character often known as '\n'. This differs from Windows, which ends lines with two characters, '\n' and '\r'. Do not let your program get trapped by this!</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>PROGRAM NAME: gift1</b></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>INPUT FORMAT</b></span></h3>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1">Line 1:</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p4"><span class="s1">The single integer, NP</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1">Lines 2..NP+1:</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p4"><span class="s1">Each line contains the name of a group member</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p4"><span class="s1">Lines NP+2..end:</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p4"><span class="s1">NP groups of lines organized like this:</span></p>
+        <table cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td valign="middle" class="td3">
+                <p class="p4"><span class="s1">The first line in the group tells the person's name who will be giving gifts.</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td valign="middle" class="td3">
+                <p class="p4"><span class="s1">The second line in the group contains two numbers: The initial amount of money (in the range 0..2000) to be divided up into gifts by the giver and then the number of people to whom the giver will give gifts, NG</span><span class="s2"><sub>i</sub></span><span class="s1"> (0 ≤ NG</span><span class="s2"><sub>i</sub></span><span class="s1"> ≤ NP-1).</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td valign="middle" class="td3">
+                <p class="p4"><span class="s1">If NG</span><span class="s2"><sub>i</sub></span><span class="s1"> is nonzero, each of the next NG</span><span class="s2"><sub>i</sub></span><span class="s1"> lines lists the name of a recipient of a gift.</span></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p5"><span class="s1"></span><br></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>SAMPLE INPUT (file gift1.in)</b></span></h3>
+<p class="p6"><span class="s1">5</span></p>
+<p class="p6"><span class="s1">dave</span></p>
+<p class="p6"><span class="s1">laura</span></p>
+<p class="p6"><span class="s1">owen</span></p>
+<p class="p6"><span class="s1">vick</span></p>
+<p class="p6"><span class="s1">amr</span></p>
+<p class="p6"><span class="s1">dave</span></p>
+<p class="p6"><span class="s1">200 3</span></p>
+<p class="p6"><span class="s1">laura</span></p>
+<p class="p6"><span class="s1">owen</span></p>
+<p class="p6"><span class="s1">vick</span></p>
+<p class="p6"><span class="s1">owen</span></p>
+<p class="p6"><span class="s1">500 1</span></p>
+<p class="p6"><span class="s1">dave</span></p>
+<p class="p6"><span class="s1">amr</span></p>
+<p class="p6"><span class="s1">150 2</span></p>
+<p class="p6"><span class="s1">vick</span></p>
+<p class="p6"><span class="s1">owen</span></p>
+<p class="p6"><span class="s1">laura</span></p>
+<p class="p6"><span class="s1">0 2</span></p>
+<p class="p6"><span class="s1">amr</span></p>
+<p class="p6"><span class="s1">vick</span></p>
+<p class="p6"><span class="s1">vick</span></p>
+<p class="p6"><span class="s1">0 0</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>OUTPUT FORMAT</b></span></h3>
+<p class="p2"><span class="s1">The output is NP lines, each with the name of a person followed by a single blank followed by the net gain or loss (final_money_value - initial_money_value) for that person. The names should be printed in the same order they appear starting on line 2 of the input.</span></p>
+<p class="p2"><span class="s1">All gifts are integers. Each person gives the same integer amount of money to each friend to whom any money is given, and gives as much as possible that meets this constraint. Any money not given is kept by the giver.</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>SAMPLE OUTPUT (file gift1.out)</b></span></h3>
+<p class="p6"><span class="s1">dave 302</span></p>
+<p class="p6"><span class="s1">laura 66</span></p>
+<p class="p6"><span class="s1">owen -359</span></p>
+<p class="p6"><span class="s1">vick 141</span></p>
+<p class="p6"><span class="s1">amr -150</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>OUTPUT EXPLANATION</b></span></h3>
+<p class="p4"><span class="s1">Five names: dave, laura, owen, vick, amr Let's keep a table of the gives (money) each person 'has':</span></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td4">
+        <p class="p7"><span class="s1"><b>dave</b></span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p7"><span class="s1"><b>laura</b></span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p7"><span class="s1"><b>owen</b></span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p7"><span class="s1"><b>vick</b></span></p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p7"><span class="s1"><b>amr</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td4">
+        <p class="p7"><span class="s1">0</span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p7"><span class="s1">0</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p7"><span class="s1">0</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p7"><span class="s1">0</span></p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p7"><span class="s1">0</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td9">
+        <p class="p4"><span class="s1">First, 'dave' splits 200 among 'laura', 'owen', and 'vick'. That comes to 66 each, with 2 left over</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td4">
+        <p class="p7"><span class="s1"><b>-200+2</b></span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p7"><span class="s1"><b>66</b></span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p7"><span class="s1"><b>66</b></span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p7"><span class="s1"><b>66</b></span></p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p7"><span class="s1">0</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td9">
+        <p class="p4"><span class="s1">Second, 'owen' gives 500 to 'dave':</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td4">
+        <p class="p7"><span class="s1">-198<b>+500</b></span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p7"><span class="s1">66</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p7"><span class="s1">66<b>-500</b></span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p7"><span class="s1">66</span></p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p7"><span class="s1">0</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td9">
+        <p class="p4"><span class="s1">Third, 'amr' splits 150 between 'vick' and 'owen':</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td4">
+        <p class="p7"><span class="s1">302</span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p7"><span class="s1">66</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p7"><span class="s1">-434<b>+75</b></span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p7"><span class="s1">66<b>+75</b></span></p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p7"><span class="s1"><b>-150</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td9">
+        <p class="p4"><span class="s1">Fourth, 'laura' splits 0 between 'amr' and 'vick'; no changes:</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td4">
+        <p class="p7"><span class="s1">302</span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p7"><span class="s1">66</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p7"><span class="s1">-359</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p7"><span class="s1">141</span></p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p7"><span class="s1">-150</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" valign="middle" class="td9">
+        <p class="p4"><span class="s1">Finally, 'vick' gives 0 to no one:</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td4">
+        <p class="p7"><span class="s1"><b>dave</b></span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p7"><span class="s1"><b>laura</b></span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p7"><span class="s1"><b>owen</b></span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p7"><span class="s1"><b>vick</b></span></p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p7"><span class="s1"><b>amr</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td4">
+        <p class="p7"><span class="s1">302</span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p7"><span class="s1">66</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p7"><span class="s1">-359</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p7"><span class="s1">141</span></p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p7"><span class="s1">-150</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

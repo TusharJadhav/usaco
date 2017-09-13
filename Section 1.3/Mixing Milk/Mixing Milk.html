@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.83">
+  <style type="text/css">
+    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p5 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #000000; -webkit-text-stroke: #000000}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {-webkit-text-stroke: 0px #000000}
+    span.s3 {font: 10.0px Times; font-kerning: none}
+    span.s4 {font: 12.0px Courier; font-kerning: none}
+    table.t1 {border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080}
+    td.td1 {width: 105.8px; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td2 {width: 499.5px; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td3 {width: 40.8px; margin: 2.5px 2.5px 2.5px 2.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td4 {width: 46.0px; margin: 2.5px 2.5px 2.5px 2.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td5 {width: 36.0px; margin: 2.5px 2.5px 2.5px 2.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td6 {width: 35.7px; margin: 2.5px 2.5px 2.5px 2.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td7 {width: 49.2px; margin: 2.5px 2.5px 2.5px 2.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td8 {width: 145.6px; margin: 2.5px 2.5px 2.5px 2.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; text-align: center; line-height: 28.0px; font: 24.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Mixing Milk</b></span></h1>
+<p class="p2"><span class="s1">The Merry Milk Makers company buys milk from farmers, packages it into attractive 1- and 2-Unit bottles, and then sells that milk to grocery stores so we can each start our day with delicious cereal and milk.</span></p>
+<p class="p2"><span class="s1">Since milk packaging is such a difficult business in which to make money, it is important to keep the costs as low as possible. Help Merry Milk Makers purchase the farmers' milk in the cheapest possible manner. The MMM company has an extraordinarily talented marketing department and knows precisely how much milk they need each day to package for their customers.</span></p>
+<p class="p2"><span class="s1">The company has contracts with several farmers from whom they may purchase milk, and each farmer has a (potentially) different price at which they sell milk to the packing plant. Of course, a herd of cows can only produce so much milk each day, so the farmers already know how much milk they will have available.</span></p>
+<p class="p2"><span class="s1">Each day, Merry Milk Makers can purchase an integer number of units of milk from each farmer, a number that is always less than or equal to the farmer's limit (and might be the entire production from that farmer, none of the production, or any integer in between).</span></p>
+<p class="p2"><span class="s1">Given:</span></p>
+<ul class="ul1">
+  <li class="li3"><span class="s2"></span><span class="s1">The Merry Milk Makers' daily requirement of milk</span></li>
+  <li class="li3"><span class="s2"></span><span class="s1">The cost per unit for milk from each farmer</span></li>
+  <li class="li3"><span class="s2"></span><span class="s1">The amount of milk available from each farmer</span></li>
+</ul>
+<p class="p3"><span class="s1">calculate the minimum amount of money that Merry Milk Makers must spend to meet their daily need for milk.</span></p>
+<p class="p2"><span class="s1">Note: The total milk produced per day by the farmers will always be sufficient to meet the demands of the Merry Milk Makers even if the prices are high.</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>PROGRAM NAME: milk</b></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>INPUT FORMAT</b></span></h3>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p3"><span class="s1">Line 1:</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s1">Two integers, N and M. </span></p>
+        <p class="p3"><span class="s1">The first value, N, (0 &lt;= N &lt;= 2,000,000) is the amount of milk that Merry Milk Makers wants per day. </span></p>
+        <p class="p3"><span class="s1">The second, M, (0 &lt;= M &lt;= 5,000) is the number of farmers that they may buy from. </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p3"><span class="s1">Lines 2 through M+1:</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s1">The next M lines each contain two integers: P</span><span class="s3"><sub>i</sub></span><span class="s1"> and A</span><span class="s3"><sub>i</sub></span><span class="s1">. </span></p>
+        <p class="p3"><span class="s1">P</span><span class="s3"><sub>i</sub></span><span class="s1"> (0 &lt;= P</span><span class="s3"><sub>i</sub></span><span class="s1"> &lt;= 1,000) is price in cents that farmer i charges.</span></p>
+        <p class="p3"><span class="s1">A</span><span class="s3"><sub>i</sub></span><span class="s1"> (0 &lt;= Ai &lt;= 2,000,000) is the amount of milk that farmer i can sell to Merry Milk Makers per day.</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p5"><span class="s1"></span><br></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>SAMPLE INPUT (file milk.in)</b></span></h3>
+<p class="p6"><span class="s1">100 5</span></p>
+<p class="p6"><span class="s1">5 20</span></p>
+<p class="p6"><span class="s1">9 40</span></p>
+<p class="p6"><span class="s1">3 10</span></p>
+<p class="p6"><span class="s1">8 80</span></p>
+<p class="p6"><span class="s1">6 30</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>INPUT EXPLANATION</b></span></h3>
+<p class="p3"><span class="s4">100 5</span><span class="s1"> -- MMM wants 100 units of milk from 5 farmers</span></p>
+<p class="p3"><span class="s4">5 20</span><span class="s1"> -- Farmer 1 says, "I can sell you 20 units at 5 cents per unit"</span></p>
+<p class="p3"><span class="s4">9 40</span><span class="s1"> etc.</span></p>
+<p class="p3"><span class="s4">3 10</span><span class="s1"> -- Farmer 3 says, "I can sell you 10 units at 3 cents per unit"</span></p>
+<p class="p3"><span class="s4">8 80</span><span class="s1"> etc.</span></p>
+<p class="p3"><span class="s4">6 30</span><span class="s1"> -- Farmer 5 says, "I can sell you 30 units at 6 cents per unit"</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>OUTPUT FORMAT</b></span></h3>
+<p class="p2"><span class="s1">A single line with a single integer that is the minimum cost that Merry Milk Makers must pay for one day's milk.</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>SAMPLE OUTPUT (file milk.out)</b></span></h3>
+<p class="p6"><span class="s1">630</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>OUTPUT EXPLANATION</b></span></h3>
+<p class="p3"><span class="s1">Here's how the MMM company spent only 630 cents to purchase 100 units of milk:</span></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td3">
+        <p class="p7"><span class="s1"><b>Price</b></span></p>
+        <p class="p7"><span class="s1"><b>per unit</b></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p7"><span class="s1"><b>Units</b></span></p>
+        <p class="p7"><span class="s1"><b>available</b></span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p7"><span class="s1"><b>Units</b></span></p>
+        <p class="p7"><span class="s1"><b>bought</b></span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p7"><span class="s1"><b>Price *</b></span></p>
+        <p class="p7"><span class="s1"><b># units</b></span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p7"><span class="s1"><b>Total cost</b></span></p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p7"><span class="s1"><b>Notes</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td3">
+        <p class="p7"><span class="s1">5</span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p7"><span class="s1">20</span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p7"><span class="s1">20</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p7"><span class="s1">5*20</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p7"><span class="s1">100</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td3">
+        <p class="p7"><span class="s1">9</span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p7"><span class="s1">40</span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p7"><span class="s1">0</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p8"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p8"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p3"><span class="s1">Bought no milk from farmer 2</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td3">
+        <p class="p7"><span class="s1">3</span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p7"><span class="s1">10</span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p7"><span class="s1">10</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p7"><span class="s1">3*10</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p7"><span class="s1">30</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td3">
+        <p class="p7"><span class="s1">8</span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p7"><span class="s1">80</span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p7"><span class="s1">40</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p7"><span class="s1">8*40</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p7"><span class="s1">320</span></p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p3"><span class="s1">Did not buy all 80 units!</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td3">
+        <p class="p7"><span class="s1">6</span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p7"><span class="s1">30</span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p7"><span class="s1">30</span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p7"><span class="s1">6*30</span></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p7"><span class="s1">180</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td3">
+        <p class="p7"><span class="s1"><b>Total</b></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p7"><span class="s1">180</span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p7"><span class="s1"><b>100</b></span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p8"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p7"><span class="s1"><b>630</b></span></p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p3"><span class="s1">Cheapest total cost</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
